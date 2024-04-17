@@ -1,0 +1,13 @@
+{
+    "equipment": {
+        "KEITHLEY 6221 CURR_SOURCE": "GPIB0::5::INSTR",
+        "KEITHLEY 2400 SOURCE_METER": "GPIB0::24::INSTR",
+        "LAKESHORE 642 MAG_PSUP": "GPIB1::12::INSTR",
+        "LAKESHORE 332 TEMP_CONTR": "GPIB1::13::INSTR",
+        "LAKESHORE 340 TEMP_CONTR": "GPIB1::16::INSTR",
+        "LAKESHORE 475 GAUSSMETER": "GPIB1::21::INSTR",
+        "SR850 LIA": "GPIB0::8::INSTR",
+	"AGILENT B1500A SPA": "GPIB0::17::INSTR"
+    },
+    "backend": "C:\\Windows\\System32\\visa32.dll"
+}
