@@ -3,7 +3,8 @@ A Python GUI for remotely controlling magnetic probe station equipment via GPIB.
 
 The main use case for this software is for acquiring current and voltage measurements while sweeping a parallel-plane magnetic field, which is a standard measurement for analysis of non-local spin valves. 
 
-![gui](https://github.com/sam-olson/lakeshore-magsweep/blob/main/assets/GUI_interface.JPG)
+![gui](https://github.com/sam-olson/nlsv-magsweep/blob/main/assets/GUI_interface.JPG)
+
 
 ## Select Features
 - User-friendly GUI with asynchronous functionality
@@ -19,7 +20,7 @@ The following instruments are currently supported out of the box:
 - Lakeshore 475 DSP Gaussmeter
 - Lakeshore 642 Electromagnet Power Supply
 
-![instruments](https://github.com/sam-olson/lakeshore-magsweep/blob/main/assets/instruments.png)
+![instruments](https://github.com/sam-olson/nlsv-magsweep/blob/main/assets/instruments.png)
 *a) Agilent B1500A, b) Lakeshore magnetic test equipment, c) Stanford Research Systems SR850, d) Keithley 6221, e) Lakeshore magnetic probe station*
 
 ## Software Setup
@@ -63,7 +64,7 @@ All instruments should be connected via GPIB to the host computer and switched o
 ## Measurement of Non-Local Spin Valves (NLSVs) - Theoretical Background
 NLSVs are devices that can be used to determine the spintronic properties of a material. Ferromagnetic electrodes are used to inject a spin-polarized current into a material. This spin polarized current then traverses the material and is detected by a set of reference electrodes as a voltage. This voltage can then be converted to a resistance using Ohm's law, which is then termed the non-local resistance. 
 
-![nlsv](https://github.com/sam-olson/lakeshore-magsweep/blob/main/assets/NLSV_schematic.png)
+![nlsv](https://github.com/sam-olson/nlsv-magsweep/blob/main/assets/NLSV_schematic.png)
 *Schematic of a graphene-channel NLSV*
 
 An external magnetic field parallel to the electrodes is swept from high negative field to high positive field, causing the electrode material to switch its magnetization direction, and so switch the direction of the injected spin-polarized electrons. The injector and detector electrodes are made to have different widths and so different magnetic coercivities. This results in the injector and detector electrodes briefly being anti-parallel in their magnetic alignment to one another. This causes the non-local resistance to change, and the magnitude of this change is termed the non-local spin signal. The larger the spin signal, the higher the amount of spin-polarized current reaching the detector electrodes. For practical devices, it is desired that such spin-polarized currents can traverse relatively large distances without depolarizing, a metric known as the material's "spin diffusion length".
